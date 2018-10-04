@@ -5,7 +5,7 @@ import cucumber.api.junit.Cucumber;
 import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "src/test/resources/featurefiles/login.feature", glue = "glue", tags = "@amazon")
+@CucumberOptions(features = "src/test/resources/featurefiles/login.feature", glue = "glue", tags = "@dragdrop")
 
 public class Runner {
 }

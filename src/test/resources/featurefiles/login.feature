@@ -5,7 +5,13 @@ Feature: Amazon website
     Given Client launches to the Amazon home page
     When Client enters the credentials
    # Then Client CLicks the search box and enters the word electronics
-  Then Navigate to all electronics tab
-    Then Navigate to echo and alexa tab
+   # Then Navigate to all electronics tab
+   # Then Navigate to echo and alexa tab
+    Then Search for telivisions from price highest
+    Then select the product and continue to cart
+    Then delete the selected product from cart
 
-    Scenario: drag and drop
+    @dragdrop
+    Scenario: drag and drop test
+      Given Launch the specific test URL
+      Then perform the test for drag and drop

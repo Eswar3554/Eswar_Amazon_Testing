@@ -52,4 +52,30 @@ public class LoginSteps {
     public void echoAndAlexaTab() throws Exception{
         login.setEchoandalexa();
     }
+
+    @Given("Launch the specific test URL")
+    public void wSchools() throws Exception{
+        driver.get("http://demo.guru99.com/selenium/drag_drop.html");
+        driver.manage().window().maximize();
+    }
+
+    @Then("perform the test for drag and drop")
+    public void dragAndDrop() throws Exception{
+        login.dragAndDropTest();
+    }
+
+    @Then("Search for telivisions from price highest")
+    public void highToLowSelect()throws Exception{
+        login.setHightolowselect();
+    }
+
+    @Then("select the product and continue to cart")
+    public void productSelection() throws Exception{
+        login.selectProductAndAddToCart();
+    }
+
+    @Then("delete the selected product from cart")
+    public void deleteProduct() throws Exception{
+        login.setDeleteproduct();
+    }
 }
