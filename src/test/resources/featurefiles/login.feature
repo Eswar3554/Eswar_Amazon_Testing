@@ -10,8 +10,16 @@ Feature: Amazon website
     Then Search for telivisions from price highest
     Then select the product and continue to cart
     Then delete the selected product from cart
+   # Then I should see the message "Your Shopping Cart is empty"
+  Then Second message should be "Sony XBR75X940E 75-Inch"
 
     @dragdrop
     Scenario: drag and drop test
       Given Launch the specific test URL
       Then perform the test for drag and drop
+      Then Verify the text of the heading as "blocks into empty cells"
+
+      @google
+      Scenario: Google test
+        Given Launch google and enter tangerine search
+        Then Verify the tangerine text on google site "https://www.tangerine.ca/"
